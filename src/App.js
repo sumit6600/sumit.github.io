@@ -8,8 +8,7 @@ import {
   leadership,
   skills,
   getInTouch,
-  experiences
-} from "./editable-stuff/config.js";
+} from "./Screen/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
@@ -42,11 +41,7 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      {
-        experiences.show && (
-          <Experience experiences={experiences}/>
-        )
-      }
+      
       {repos.show && (
         <Project
           heading={repos.heading}

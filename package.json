@@ -1,13 +1,13 @@
 {
-  "name": "developers-portfolio",
+  "name": "portfolio",
+  "homepage": "https://sumit-12.herokuapp.com/",
   "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
-  "homepage": "http://hashirshoaeb.com/home",
   "version": "2.0.0",
   "private": true,
   "author": {
-    "name": "Hashir Shoaib",
-    "email": "hashirshoaeb@gmail.com",
-    "url": "https://github.com/hashirshoaeb"
+    "name": "Sumit Kumar",
+    "email": "sumitchoudhary6600@gmail.com",
+    "url": "https://github.com/sumit6600"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -33,7 +33,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "custom-deploy": "node pages.js"
+    "custom-deploy": "node pages.js",
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
